@@ -1,5 +1,8 @@
 # zjmf-v1-register-unauth-account-poc
 
+> [!NOTE]
+> 使用AI生成项目内容。
+
 ZJMF（智简魔方 / 魔方财务）v3.8.0 及以下客户区 OpenAPI `POST /v1/register` 空参数未授权注册漏洞的公开安全版 PoC。
 
 一条空请求即可创建一个没有邮箱、没有手机号、没有密码的客户账号，并在响应中直接返回一个可被 `Check` 中间件接受的 JWT；该账号不会产生客户注册日志。
